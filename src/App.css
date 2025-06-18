@@ -1,0 +1,77 @@
+.App {
+  margin: 20px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTile {
+  width: 70%;
+  font-size: x-large;
+  font-weight: 600;
+  color: #141d2c;
+  letter-spacing: 1px;
+}
+
+button,
+select {
+  letter-spacing: 1px;
+  width: 120px;
+  cursor: pointer;
+  background-color: #141d2c;
+  border-color: white;
+  border: 1px solid;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 80px;
+}
+
+.tableContainer {
+  margin-top: 30px;
+  width: 100%;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border: 1px solid #999;
+  opacity: 0.6;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 97vw;
+  height: 97vh;
+  opacity: 0.5;  
+  background-color: lightblue;
+ position: absolute;
+ z-index: 10;
+ overflow: hidden;
+ border-radius: 5%;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;    
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
